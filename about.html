@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Boxicons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Removed margin to ensure content starts from the top */
+            padding: 60px; /* Adjust this padding to control the top gap */
+            display: flex;
+            align-items: flex-start; /* Aligns content to start from the top */
+        }
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 28px;
+            color: #0056b3;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-button:hover {
+            color: #003c80;
+        }
+        /* Small devices (phones) */
+@media screen and (max-width: 480px) {
+        .wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .image {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 40px;
+            max-height: 300px;
+        }
+        .image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 2;
+            text-align: le;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0056b3;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .title i {
+            font-size: 18px;
+            color: #0056b3;
+        }
+        .point {
+            margin-top: 12px;
+        }
+        .point-title {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #0056b3;
+            font-size: 14px;
+            gap: 8px;
+        }
+        .point-title i {
+            font-size: 14px;
+            color: #0056b3;
+        }
+        .point-text {
+            font-size: 12px;
+            color: #333;
+            margin-left: 30px;
+            line-height: 1.5;
+        }
+        .connect {
+            margin-top: 12px;
+            font-size: 16px;
+        }
+        .connect a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .connect a:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+    @media (max-width: 412px)  {
+        
+    .wrapper {
+        flex-direction: column; /* Stack image on top */
+        text-align: center;
+    }
+
+    .image {
+        max-width: 100%;
+        margin: 0 auto; /* Center the image */
+    }
+
+    .image img {
+        width: 70%;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+    
+    
+    .title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #0056b3;
+        display: flex
+;
+        align-items: baseline;
+        gap: 8px;
+        margin-bottom: 10px;
+        text-align: left;
+        width: 130%;
+        display: block;
+        margin-left: -40px;
+        margin-top: 10px;
+    }
+    .point-title {
+        font-size: 14px;
+        align-items: baseline;
+        text-align: left;
+        width: 130%;
+        display: block;
+        margin-left: 10px;
+        margin-bottom: 5px;;
+    }
+    .connect {
+        margin-top: 12px;
+        font-size: 12px;
+        display: block;
+        width: 150%;
+        text-align: center;
+        margin-left: -60px;
+        margin-top: 30px;
+    }
+    .point-text {
+        font-size: 12px;
+        color: #333;
+        margin-left: 10px;
+        line-height: 1.5;
+    }
+    .home-button{
+    font-size: 20px;
+}
+}
+    
+
+    /* Medium devices (tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .image {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 40px;
+        }
+        .image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 2;
+            text-align: left;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0056b3;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .title i {
+            font-size: 26px;
+            color: #0056b3;
+        }
+        .point {
+            margin-top: 12px;
+        }
+        .point-title {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #0056b3;
+            font-size: 18px;
+            gap: 8px;
+        }
+        .point-title i {
+            font-size: 20px;
+            color: #0056b3;
+        }
+        .point-text {
+            font-size: 16px;
+            color: #333;
+            margin-left: 30px;
+            line-height: 1.5;
+        }
+        .connect {
+            margin-top: 12px;
+            font-size: 16px;
+        }
+        .connect a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .connect a:hover {
+            text-decoration: underline;
+        }
+    }
+    /* Large devices (laptops) */
+@media screen and (min-width: 769px) {
+    .wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .image {
+            flex: 1;
+            max-width: 300px;
+            margin-right: 40px;
+        }
+        .image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 2;
+            text-align: left;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0056b3;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+        .title i {
+            font-size: 26px;
+            color: #0056b3;
+        }
+        .point {
+            margin-top: 12px;
+        }
+        .point-title {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #0056b3;
+            font-size: 18px;
+            gap: 8px;
+        }
+        .point-title i {
+            font-size: 20px;
+            color: #0056b3;
+        }
+        .point-text {
+            font-size: 16px;
+            color: #333;
+            margin-left: 30px;
+            line-height: 1.5;
+        }
+        .connect {
+            margin-top: 12px;
+            font-size: 16px;
+        }
+        .connect a {
+            text-decoration: none;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .connect a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="index.html" class="home-button"><i class='bx bxs-home'> </i></a>
+
+    <div class="wrapper">
+        <!-- Image Section -->
+        <div class="image">
+            <img src="assets/img/about.jpg" alt="Profile Image">
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <h3 class="title"><i class='bx bx-face'></i>
+                Who am I ?</h3>
+            <p class="point-text">A dedicated and passionate Engineer, known for combining technical expertise with creativity to solve real-life challenges and deliver value-driven solutions.
+                Strong interpersonal skills with a talent for effective communication, active listening, and relationship building.
+                Committed to understanding client needs, ensuring customer satisfaction, and driving sustainable business growth.</p>
+            <div class="point">
+                <div class="point-title"><i class='bx bx-bulb'></i> Problem Solver and Innovator:</div>
+                <p class="point-text">I thrive on understanding client needs and designing customized solutions that optimize their operations. My technical expertise, coupled with a consultative approach, enables me to provide strategic insights and innovative solutions that enhance productivity and efficiency.</p>
+            </div>
+
+            <div class="point">
+                <div class="point-title"><i class='bx bx-group'></i> Customer-Focused and Collaborative:</div>
+                <p class="point-text">I am committed to building strong relationships and delivering exceptional customer service. My adaptability and quick learning skills allow me to exceed sales targets while fostering a collaborative team environment that values diverse perspectives.</p>
+            </div>
+
+            <div class="point">
+                <div class="point-title"><i class='bx bx-trending-up'></i>
+                    Continuous Learner and Growth-Oriented:</div>
+                <p class="point-text">I am driven by a continuous quest for learning and personal growth. I am eager to expand my skill set, make valuable connections, and contribute to the success of forward-thinking organizations in the automation industry.</p>
+            </div>
+            <br><br>
+            <div class="content">
+                <h3 class="title"><i class='bx bx-glasses'></i>
+                    How do I keep my creativity flowing outside of work?</h3><br>
+                <div class="point">
+                    <div class="point-title"><i class='bx bx-search'></i>  Curious Tech Explorer:
+                    </div>
+                    <p class="point-text">Ever wondered what makes the latest gadgets tick or how AI is changing the world? Me too—constantly. I’m the kind of person who enjoys deep-diving into tech trends and exploring new software just for fun. From discovering hidden app features to testing out the latest tools, I’m always learning something new. This curiosity makes me adaptable and quick to pick up new skills—because in today’s fast-paced tech world, being a tech geek is practically a superpower.</p>
+                </div>
+                <div class="point">
+                    <div class="point-title"><i class='bx bx-palette'></i> Creative Designer at Heart:
+                    </div>
+                    <p class="point-text">Ever caught yourself admiring a sleek logo or a cool poster and wondering, “Who made this?” Well, that could be me someday! I have a genuine passion for graphic designing—whether it’s creating unique visuals or playing around with new design styles. I love turning random ideas into eye-catching graphics, which sharpens my creativity and attention to detail. Plus, it’s pretty handy when you need a last-minute presentation to look like it was crafted by a design agency.
+                    </p>
+                </div>
+                <div class="point">
+                    <div class="point-title"><i class='bx bx-book-reader'></i> Passionate story seeker:
+                    </div>
+                    <p class="point-text">
+                        When I’m not busy designing or solving problems, you’ll probably find me with my nose buried in a book. Whether it’s a gripping novel, a thought-provoking non-fiction, or a self-improvement guide, I love diving into different worlds and gaining new perspectives. Reading not only expands my knowledge but also sharpens my analytical thinking and creativity—skills that come in handy when tackling real-world challenges. Plus, you can always count on me for a solid book recommendation!</p>
+                </div>
+        
+        
+        
+                <div class="point">
+                    <div class="point-title"><i class='bx bx-bowl-hot'></i>
+                        Cooking with Creativity:
+                    </div>
+                    <p class="point-text">Why settle for instant noodles when you can create a five-star dish? Cooking is my creative escape. I love experimenting with new recipes, mixing unexpected flavors, and occasionally setting off the smoke alarm (kidding… mostly). This hobby has surprisingly taught me patience, precision, and adaptability—skills that come in handy when tackling complex projects or finding creative solutions at work. Plus, I make a mean biryani, which could be a solid team-bonding perk!
+                    </p>
+                    
+                <div class="point">
+                    <div class="point-title"><i class='bx bx-brain'></i> Strategic Gamer:
+        
+                    </div>
+                    <p class="point-text">What do chess, billiards, and cricket have in common? They all challenge me to think several steps ahead—and occasionally question my life choices when I miss an easy shot.  In my free time, I love playing strategy games that sharpen my problem-solving skills and improve my focus. Whether planning a sneaky chess move or aiming for the perfect billiards shot, these games keep my mind sharp and strategic—a skill that translates well into real-life decision-making.</p>
+                </div>
+
+                <br><br>
+            <div class="content">
+                <h3 class="title"><i class='bx bx-briefcase'></i> If you’re wondering how all this makes me valuable to a business...
+                </h3><br>
+                <p class="point-text">My hobbies aren’t just for fun—they shape me into a creative, adaptable, and well-rounded professional. From designing and tech exploration to cooking and gaming, these activities strengthen my analytical thinking, problem-solving skills, and ability to think outside the box. Whether it’s crafting a creative marketing strategy, tackling a technical challenge, or bringing fresh ideas to the table, my diverse interests allow me to add value in surprising and effective ways.</p>
+
+
+            <p class="connect"><a href="index.html">Let's connect</a> to explore how we can drive innovation and create impactful solutions together!</p>
+        </div>
+    </div>
+   
+
+</body>
+</html>

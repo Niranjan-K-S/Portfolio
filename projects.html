@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <!-- Boxicons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Removed margin to ensure content starts from the top */
+            padding: 60px; /* Adjust this padding to control the top gap */
+            display: flex;
+            align-items: flex-start; /* Aligns content to start from the top */
+        }
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 28px;
+            color: #0056b3;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-button:hover {
+            color: #003c80;
+        }
+        /* Small devices (phones) */
+@media screen and (max-width: 480px) {
+        .wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #1a56db;
+        }
+        .project-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1a56db;
+            display: flex;
+            align-items: center;
+        }
+        .project-title i {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+        .project-description {
+            font-size: 12px;
+            color: #333;
+            margin-top: 5px;
+        }
+    }
+
+    @media (max-width: 412px) {
+        .project-title i {
+            margin-right: 8px;
+            font-size: 12px;
+        }
+        .project-description {
+            font-size: 10px;
+            color: #333;
+            margin-top: 5px;
+        }
+        .title {
+            text-align: center;
+            font-size: 20px;
+        }
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 20px;
+
+    }
+}
+
+@media screen and (max-width: 320px) and (max-width: 360px)  {
+    .project-title i {
+            margin-right: 8px;
+            font-size: 12px;
+        }
+        .project-description {
+            font-size: 10px;
+            color: #333;
+            margin-top: 5px;
+        }
+        .title {
+            text-align: center;
+            font-size: 20px;
+        }
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            font-size: 20px;
+
+    }
+}
+
+    /* Medium devices (tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #1a56db;
+        }
+        .project-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1a56db;
+            display: flex;
+            align-items: center;
+        }
+        .project-title i {
+            margin-right: 8px;
+            font-size: 14px;
+        }
+        .project-description {
+            font-size: 12px;
+            color: #333;
+            margin-top: 5px;
+        }
+    }
+
+    /* Large devices (laptops) */
+@media screen and (min-width: 769px) {
+    .wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #1a56db;
+        }
+        .project-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .project {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .project-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1a56db;
+            display: flex;
+            align-items: center;
+        }
+        .project-title i {
+            margin-right: 8px;
+            font-size: 20px;
+        }
+        .project-description {
+            font-size: 18px;
+            color: #333;
+            margin-top: 5px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="index.html" class="home-button"><i class='bx bxs-home'> </i></a>
+
+    <div class="container">
+
+        <div class="title">Academic Projects</div>
+    
+        <div class="project-container">
+            <div class="project">
+                <div class="project-title">
+                    <i class='bx bx-chevron-right'></i> Modelling and Fabrication of a Pulse Jet Engine
+                </div><br>
+                <div class="project-description">
+                    Developed a scaled-down and working model of a Pulse Jet engine. Engineering principles, thermodynamic principles, and material selection were studied.
+                </div>
+            </div>
+    
+            <div class="project">
+                <div class="project-title">
+                    <i class='bx bx-chevron-right'></i> Design and Analysis of Landing Gear Components
+                </div><br>
+                <div class="project-description">
+                    Modeled and analyzed various landing gear components using diverse materials. Structural analysis for efficient and reliable aircraft landing systems was studied.
+                </div>
+            </div>
+    
+            <div class="project">
+                <div class="project-title">
+                    <i class='bx bx-chevron-right'></i> 4D Printing Technology
+                </div><br>
+                <div class="project-description">
+                    Conducted a case study on 4D printing, an emerging technology that enables objects to transform over time, presenting a groundbreaking approach for industries.
+                </div>
+            </div>
+    
+            <div class="project">
+                <div class="project-title">
+                    <i class='bx bx-chevron-right'></i> Development of a RC Aircraft
+                </div><br>
+                <div class="project-description">
+                    Designed and built a Remote-Controlled Aircraft with a focus on aerodynamics, lightweight materials, and stability testing.
+                </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">
+                        <i class='bx bx-chevron-right'></i>IoT Based Quadcopter
+                    </div><br>
+                    <div class="project-description">
+                        Developed an IoT-based quadcopter as a final year project, integrating real-time data collection
+ and remote control capabilities for enhanced aerial surveillance and monitoring.</div>
+            </div>
+        </div>
+</body>
+</html>
